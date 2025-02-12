@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML</title>
+    <script>
+        function changeColor() {
+            var color = document.getElementById('txtColor').value;
+            var bgcolor = document.getElementById('BGCOLOR').value;
+            document.getElementById('divColor').style.color = color;
+            document.getElementById('divColor').style.backgroundColor = bgcolor;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="txtColor">
+    <select id="BGCOLOR">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select>
+    <button onclick="changeColor()">Change Color</button>
+    <div id="divColor">Hello World!</div>
+    
+</body>
+</html>
