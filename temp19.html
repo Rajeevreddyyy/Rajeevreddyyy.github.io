@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const products = [
+        {id: 1, name:"product 1",price:30},
+        {id: 2, name:"product 2",price:40},
+        {id: 3, name:"product 3",price:50}
+    ]
+    const showp=()=>{
+        let str=""
+        products.forEach((value)=>{
+            str+=`<div>${value.id} - ${value.name} - ${value.price}<button>Add To cart</button></div>`
+        })
+        divProducts.innerHTML=str
+    }
+</script>
+<body onLoad=showp()>
+    <h1>
+        my Store
+    </h1>
+    <hr>
+    <div id="divProducts"></div>
+    
+</body>
+</html>
