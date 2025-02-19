@@ -1,5 +1,6 @@
 let products = []
 
+
 fetch("products.json")
   .then((response) => response.json()) 
   .then((data) => (showProducts(data))) 
